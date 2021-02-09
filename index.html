@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Id</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<p>Alpha UID = <span id="demo"><span> </p>
+
+<p>Numeric UID = <span id="demo1"><span> </p>
+
+<p>LENGTH = <span id="length"><span></p>
+
+<script>
+function myFunction() {
+var alphaUid = Math.random().toString(36).substr(2, 10);
+var numericUid = Math.random()*100000000000000000;
+var uidLength = alphaUid.length;
+document.getElementById("demo").innerHTML = alphaUid ;
+document.getElementById("demo1").innerHTML = numericUid ;
+document.getElementById("length").innerHTML =  uidLength;
+}
+</script>
+
+</body>
+</html>
